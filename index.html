@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>배부른 흰둥이 - 음악에 충실한 디스코드 봇</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
+      <link rel="stylesheet" href="scribbler-global.css">
+      <link rel="stylesheet" href="scribbler-landing.css">
+      <link rel="author" href="humans.txt">
+  </head>
+  <body>
+    <nav>
+      <div class="logo2.png"></div>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="https://discord.com/api/oauth2/authorize?client_id=1039546870579605625&permissions=8&scope=bot" class="link link--dark"><i class=""></i> Invite</a></li>
+        <!--<li class="menu__item"><a href="" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>-->
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1 class="hero__title">배부른 흰둥이</h1>
+      <p class="hero__description">음악 관련 명령어 외에는 아무것도 없습니다 그만큼 음악에만 집중되어있어요.</p>
+    </div>
+    <div class="hero__terminal">
+      <pre>
+        <!-- Place your demo code here -->
+        <code class="shell-session demo">node.js </code>
+      </pre>
+    </div>
+    <div class="wrapper">
+      <div class="installation">
+        <h3 class="section__title">Invite</h3>
+        <div class="tab__container">
+          <ul class="tab__menu">
+            <li class="tab active" data-tab="mac">Invite link</li>
+            <li class="tab" data-tab="linux">Contact</li>
+            <li class="tab" data-tab="win">Discord</li>
+          </ul>
+          <pre class="nohighlight code">
+            <code class="tab__pane active mac">https://discord.com/api/oauth2/authorize?client_id=1039546870579605625&permissions=8&scope=bot</code>
+            <code class="tab__pane linux">Discord : Shark#3203</code>
+            <code class="tab__pane win">null</code>
+          </pre>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature__item">
+          <h3 class="section__title">완전한 한글</h3>
+          <p>모든 명령어들이 한글로 이루어져 있습니다 친숙한 언어로 명령어를 사용해보세요.</p>
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title">Discord / 명령어 지원</h3>
+          <p>/ 를 입력하면 디스코드에서 사용가능한 명령어를 디스플레이 해줘요.</p>
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title">음악에 집중</h3>
+          <p>음악 기능 외에는 아무 기능도 들어있지 않아요 오직 음악 기능에만 집중했어요.</p>
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title">버튼식 컨트롤러 지원</h3>
+          <p>이제 버튼으로 음악을 제어할수있어요 <span class="code code--inline">/컨트롤러</span> 귀찮게 일일이 명령어로 제어할 필요가 없어졌어요.</p>
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title">음악 관련 명령어만 20개</h3>
+          <p>기본적인 검색,재생목록,스킵은 당연 몇초 건너뛰기,반복,셔플,지금음악정보까지 있을만한 기능은 다 있어요.</p>
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title">하지만...</h3>
+          <p>주인장이 별로 신경을 안써서 봇이 오프라인일수 있어요 그럴땐 위<span class="code code--inline">Contact</span> 탭에 적힌 연락처로 문의해주세요. </p>
+        </div>
+      </div>
+      <div class="keybinding">
+        <ul class="keybinding__detail">
+          <h3 class="keybinding__title">음악 재생 관련 명령어</h3>
+          <li>음악을 검색하고 싶을때 <span class="keybinding__label">/검색</span></li>
+          <li>링크로 음악을 재생하고 싶을때 <span class="keybinding__label">/플레이</span></li>
+          <li>지금 나오는 음악이 궁금할때 <span class="keybinding__label">/지금음악</span></li>
+          <li>음악을 DM으로 저장하고 싶을때 <span class="keybinding__label">/저장</span></li>
+        </ul>
+        <ul class="keybinding__detail">
+          <h3 class="keybinding__title">음악 제어 관련 명령어</h3>
+          <li><span class="keybinding__label">/스킵</span> 다음 노래로 스킵하고 싶을때</li>
+          <li><span class="keybinding__label">/뒤로</span> 이전 노래로 돌아가고 싶을때</li>
+          <li><span class="keybinding__label">/반복</span> 음악 또는 재생목록을 반복하고 싶을때</li>
+          <li><span class="keybinding__label">/컨트롤러</span> 버튼으로 음악을 제어하고 싶을때</li>
+        </ul>
+      </div>
+      <!--<div class="callout">
+        <p>Read our documentation for advanced keybindings and customization</p>
+        <a href="doc.html" class="button--primary">Documentation</a>
+      </div>-->
+    </div>
+    <div class="changelog">
+      <div class="wrapper">
+        <h3 class="section__title">Update log</h3>
+        <div class="changelog__item">
+          <div class="changelog__meta">
+            <h4 class="changelog__title">v0.3</h4>
+            <small class="changelog__date">2020/01/01</small>
+          </div>
+          <div class="changelog__detail">
+            <ul>
+              <li>버그 수정</li>
+              <li>데이터 서버 이전</li>
+              <li>Discord Application 다시 배정</li>
+              <li>Deezer Spotify 지원</li>
+            </ul>
+          </div>
+        </div>
+        <div class="changelog__item">
+          <div class="changelog__meta">
+            <h4 class="changelog__title">v0.2</h4>
+            <small class="changelog__date">2019/10/31</small>
+          </div>
+          <div class="changelog__detail">
+            <ul>
+              <li>봇 언어 변경 Python -> Node.js</li>
+              <li>버그 수정</li>
+              <li>봇 이름 변경 수아(Sua) -> 배고픈 흰둥이</li>
+            </ul>
+          </div>
+        </div>
+        <div class="changelog__item">
+          <div class="changelog__meta">
+            <h4 class="changelog__title">v0.1</h4>
+            <small class="changelog__date">2019/07/21</small>
+          </div>
+          <div class="changelog__detail">
+            <ul>
+              <li>봇 라이브 서비스 개시</li>
+              <li>클라우드 서버 시범 도입</li>
+            </ul>
+          </div>
+        </div>
+        <!--<div class="changelog__callout">
+          <a href="#" class="button--secondary">Checkout Full Log</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">Scribbler is a free HTML template created exclusively for <a href="https://tympanus.net/codrops/" target="_blank" class="link link--light">Codrops</a>.</footer>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="scribbler.js"></script>
+  </body>
+</html>
